@@ -21,7 +21,7 @@ train_datagen = ImageDataGenerator(
 )
 
 train_flow = train_datagen.flow_from_directory(
-    './data/train/', //replace this path to your own dataset
+    './data/train/', #replace this path to your own dataset
     target_size=(224,224),
     batch_size=32,
     class_mode='categorical'
